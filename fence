@@ -1,0 +1,13 @@
+
+//find min and max values of the X coordinates
+    Array.min = function(xPoints){
+        return Math.min.apply( Math, xPoints );
+    };
+    let xMin = Array.min(xPoints);
+    Array.max = function(xPoints){
+        return Math.max.apply( Math, xPoints );
+    };
+    let xMax = Array.max(xPoints);
+
+    const xFrame1 = xMin - 1;
+    const xFrame2 = xMax + 1;
